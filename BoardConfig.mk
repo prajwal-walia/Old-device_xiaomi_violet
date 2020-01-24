@@ -99,9 +99,6 @@ endif
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
-# Set boot SPL
-BOOT_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
-
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
@@ -174,9 +171,6 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 ENABLE_VENDOR_RIL_SERVICE := true
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD := true
-
-# Security patch level
-VENDOR_SECURITY_PATCH := 2018-08-05
 
 # Sepolicy
 include device/qcom/sepolicy/sepolicy.mk
